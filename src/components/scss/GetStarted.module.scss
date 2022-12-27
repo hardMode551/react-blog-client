@@ -1,0 +1,149 @@
+@import '../../mixin.scss';
+
+.root {
+  display: flex;
+  flex-wrap: wrap;
+
+  .title {
+    width: 500px;
+
+    position: relative;
+
+    @media screen and (max-width: 1120px) {
+      margin: 0 auto;
+      width: 1000px;
+      text-align: center;
+    }
+
+    h1 {
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 44px;
+
+      background: linear-gradient(93.54deg, #3b82f6 9.03%, #d946ef 43.88%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+
+      text-shadow: 0px 4px 4px #3b83f627;
+
+      @media screen and (max-width: 540px) {
+        font-size: 32px;
+      }
+    }
+
+    p {
+      margin: 20px auto;
+
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 30px;
+
+      color: #e5e7eb;
+
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+    }
+
+    button {
+      @include button-style;
+
+      font-size: 16px;
+      line-height: 19px;
+
+      width: 168px;
+      height: 59px;
+
+      background: linear-gradient(86.95deg, #3b82f6 2.58%, #d946ef 105.04%), #f9fafb;
+    }
+
+    img {
+      position: absolute;
+      bottom: 20px;
+      left: 80px;
+
+      width: 350px;
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+
+      @media screen and (max-width: 1120px) {
+        display: none;
+      }
+    }
+    .blur {
+      -moz-box-shadow: 0 0 60px #d946ef;
+      -webkit-box-shadow: 0 0 60px #d946ef;
+      box-shadow: 0 0 60px #d946ef;
+
+      position: absolute;
+      top: 309px;
+      left: 90px;
+
+      width: 60px;
+      height: 61px;
+
+      border-radius: 100%;
+
+      @media screen and (max-width: 1120px) {
+        display: none;
+      }
+    }
+  }
+
+  .images {
+    position: relative;
+    width: 620px;
+    margin-left: auto;
+
+    @media screen and (max-width: 1120px) {
+      margin: 20px auto;
+    }
+
+    @media screen and (max-width: 800px) {
+      width: 520px;
+      img {
+        width: 520px;
+      }
+      .calendar {
+        width: 90px;
+      }
+      .blur {
+        width: 40px;
+        height: 80px;
+      }
+    }
+
+    @media screen and (max-width: 520px) {
+      width: 320px;
+      img {
+        width: 320px;
+      }
+      .calendar {
+        width: 60px;
+      }
+    }
+
+    .blur {
+      -moz-box-shadow: 0 0 100px #3b82f6;
+      -webkit-box-shadow: 0 0 100px #3b82f6;
+      box-shadow: 0 0 100px #0062ff;
+
+      position: absolute;
+      top: 25px;
+      left: 20px;
+
+      width: 140px;
+      height: 180px;
+
+      border-radius: 100%;
+      filter: blur(1rem);
+    }
+
+    .calendar {
+      position: absolute;
+
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+      left: 23px;
+      top: 28px;
+    }
+  }
+}

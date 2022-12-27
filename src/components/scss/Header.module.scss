@@ -1,0 +1,51 @@
+@import '../../mixin.scss';
+
+header {
+  .header {
+    display: flex;
+    align-items: center;
+    margin: 19px 0 50px 0;
+
+    img {
+      border: 1px dashed #3a567c;
+      border-radius: 12px;
+      padding: 10px;
+      width: 30px;
+    }
+
+    .signMenu {
+      margin-left: auto;
+      button {
+        @include button-style;
+
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        padding: 12px 24px;
+
+        height: 41px;
+
+        gap: 10px;
+      }
+
+      .signIn {
+        margin-right: 8px;
+
+        background: $blue;
+      }
+
+      .signUp {
+        background: $dark-blue;
+      }
+
+      .createPost {
+        margin-right: 8px;
+
+        background: $blue;
+      }
+      .logOut {
+        background: $dark-blue;
+      }
+    }
+  }
+}

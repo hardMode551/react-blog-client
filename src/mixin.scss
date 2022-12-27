@@ -1,0 +1,25 @@
+@mixin button-style {
+  background-color: #2563eb;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(31, 41, 55, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(31, 41, 55, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(31, 41, 55, 0.2);
+
+  padding: 8px 24px;
+
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    transition: all 0.5s;
+  }
+  &:active {
+    background-color: #1c47a3;
+    transform: translateY(2px);
+    transition: all 0.01s;
+  }
+}
+
+$grey: #585858;
+$blue: #2563eb;
+$dark-blue: #2c3b50;

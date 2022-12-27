@@ -1,0 +1,93 @@
+@import '../../mixin.scss';
+
+.root {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #242424;
+  border-radius: 12px;
+
+  padding: 20px;
+
+  .removeBlock {
+    img {
+      width: 100%;
+    }
+  }
+
+  .editor {
+    overflow: auto;
+    max-height: 600px;
+
+    :global {
+      .cm-s-easymde {
+        background-color: #1a1a1a;
+
+        border: 0;
+        font-size: 18px;
+
+        margin-bottom: 10px;
+      }
+      .editor-toolbar {
+        background-color: #1a1a1a;
+
+        border: 0;
+        background-color: rgb(0 0 0 / 2%);
+      }
+    }
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h1,
+  button,
+  textarea {
+    color: #f9fafb;
+  }
+
+  input {
+    margin: 10px auto;
+    width: 100%;
+    background-color: #242424;
+    color: #f9fafb;
+  }
+
+  textarea {
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 500px;
+    overflow: auto;
+    background-color: #242424;
+  }
+
+  .title {
+    font-size: 42px;
+
+    @media screen and (max-width: 465px) {
+      font-size: 24px;
+    }
+  }
+
+  button {
+    @include button-style;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-right: 5px;
+  }
+
+  .previewBtn {
+    border: 1px solid $grey;
+    background-color: #303030;
+  }
+
+  .shareBtn {
+    margin-right: 15px;
+    background-color: $blue;
+  }
+
+  .cancelBtn {
+    background-color: $dark-blue;
+  }
+}
