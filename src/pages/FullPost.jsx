@@ -33,7 +33,7 @@ const FullPost = () => {
         id={data._id}
         title={data.title}
         text={data.text}
-        imageUrl={data.imageUrl ? `http://localhost:4444${data.imageUrl}` : ''}
+        imageUrl={data.imageUrl ? `${process.env.REACT_APP_API_URL}${data.imageUrl}` : ''}
         user={data.user}
         createdAt={data.createdAt}
         viewsCount={data.viewsCount}

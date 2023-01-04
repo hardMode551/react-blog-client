@@ -121,7 +121,7 @@ const CreateBlog = () => {
           <button onClick={removeImage}>Удалить картинку</button>
           <img
             className={styles.uploadImage}
-            src={imageUrl ? `http://localhost:4444${imageUrl}` : ''}
+            src={imageUrl ? `#{process.env.REACT_APP_API_URL}${imageUrl}` : ''}
             alt="imageUrl"
           />
         </div>
