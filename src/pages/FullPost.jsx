@@ -3,10 +3,13 @@ import React from 'react';
 import { useParams } from 'react-router';
 import Post from '../components/Post';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
+import { useSelector } from 'react-redux';
 
 const FullPost = () => {
   const [data, setData] = React.useState();
   const [isLoadingPosts, setIsLoadingPosts] = React.useState(true);
+
+  const userData = useSelector((state) => state.auth.data);
 
   const { id } = useParams();
 
@@ -38,8 +41,7 @@ const FullPost = () => {
         createdAt={data.createdAt}
         viewsCount={data.viewsCount}
         tags={data.tags}
-        isFullPost
-        isEditable
+        isEditable={userData?._id === data.user._id}
       >
         <ReactMarkdown children={data.text} />
       </Post>

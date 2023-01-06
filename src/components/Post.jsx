@@ -106,7 +106,7 @@ const Post = ({
             <label>·</label>
             <p>{createdAt}</p>
           </div>
-          {isEditable && isFullPost && (
+          {isEditable && (
             <>
               <Link to={`/FullPost/edit/${id}`}>
                 <button>Редактировать</button>
