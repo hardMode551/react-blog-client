@@ -69,24 +69,6 @@
         display: none;
       }
     }
-    .blur {
-      -moz-box-shadow: 0 0 60px #d946ef;
-      -webkit-box-shadow: 0 0 60px #d946ef;
-      box-shadow: 0 0 60px #d946ef;
-
-      position: absolute;
-      top: 309px;
-      left: 90px;
-
-      width: 60px;
-      height: 61px;
-
-      border-radius: 100%;
-
-      @media screen and (max-width: 1120px) {
-        display: none;
-      }
-    }
   }
 
   .images {
@@ -106,10 +88,6 @@
       .calendar {
         width: 90px;
       }
-      .blur {
-        width: 40px;
-        height: 80px;
-      }
     }
 
     @media screen and (max-width: 520px) {
@@ -120,22 +98,6 @@
       .calendar {
         width: 60px;
       }
-    }
-
-    .blur {
-      -moz-box-shadow: 0 0 100px #3b82f6;
-      -webkit-box-shadow: 0 0 100px #3b82f6;
-      box-shadow: 0 0 100px #0062ff;
-
-      position: absolute;
-      top: 25px;
-      left: 20px;
-
-      width: 140px;
-      height: 180px;
-
-      border-radius: 100%;
-      filter: blur(1rem);
     }
 
     .calendar {

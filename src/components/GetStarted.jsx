@@ -45,12 +45,10 @@ const GetStarted = () => {
           </button>
         </Link>
         <img src={Finger} alt="Finger" />
-        <div className={styles.blur}></div>
       </div>
       <div className={styles.images}>
         <img className={styles.dude} src={Dude} alt="Dude" />
         <img className={styles.calendar} src={Calendar} alt="Calendar" />
-        <div className={styles.blur}></div>
       </div>
     </motion.div>
   );
